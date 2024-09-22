@@ -1,5 +1,6 @@
 # `𝔸𝕣𝕡𝕚𝕥𝕒 ^^` 
 ### A multi-branched repo dedicated to 𝓱𝓮𝓻.
+Link to the website: https://zed-zee.github.io/ar
 ---
 ## By [@raghav-karn](https://github.com/raghav-karn) for his beloved Ar.
 ---
@@ -13,5 +14,5 @@ This repository houses all (one, as of now) the web works done by [@raghav-karn]
 
 Btw, math padhlena.
 
-## I love you, wifie. Take care, love.
+## I love you, wifie. Take care, my love.
 — Your hubby, Raghav Karn
