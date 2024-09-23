@@ -9,7 +9,7 @@ Link to the website: https://zed-zee.github.io/ar
 
 > I'm madly in love with you. You are the one I never want to depart from. You are the one who I adore so much, and am grateful for you being yourself to love me. You change yourself for the better, and I absolutely love it  You're the best thing I encountered, and *I WANT TO MARRY YOU TO SHARE THIS LITTLE LIFE OF MINE WITH YOURS. WOULD YOU STAY WITH ME FOREVER?*
 
-This repository houses all (one, as of now) the web works done by [@raghav-karn](https://github.com/raghav-karn) for his love Arpita. The repo constitutes various branches for varrious versions of [the site](https://zed-zee.github.io/ar), including:
+This repository houses all (one, as of now) the web works done by [@raghav-karn](https://github.com/raghav-karn) for his love Ar. The repo constitutes various branches for varrious versions of [the site](https://zed-zee.github.io/ar), including:
 1. **Ar's 15th birthday** (13/10/2024)
 
 Btw, math padhlena.
