@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fodjbdj</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1 style="color: green">
+            GeeksforGeeks
+        </h1>
+        
+        <b>
+            How to create multi-line
+            strings in JavaScript?
+        </b>
+        
+        <div class="multiline"></div>
+        
+        <p>
+            Click on the button to
+            insert multiline text
+        </p>
+        
+        <button onclick="showMultiline()">
+            Click here
+        </button>
+        
+        <script type="text/javascript">
+            function showMultiline() {
+                multilineString =
+                    "<div> \
+                        <h3>This is the heading</h3> \
+                        <p>This is a paragraph \
+                        This uses backslashes in place\
+                        of new lines</p> \
+                    </div>"
+                
+                document.querySelector('.multiline').innerHTML
+                        = multilineString;
+            }
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
