@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Foldit' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Tsukimi Rounded' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Splash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+        <title>Our Plans for Our Future</title>
+        <link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+
+        <style>
+          * {box-sizing: border-box}
+          body {font-family: Verdana, sans-serif; margin-top:10;}
+          .mySlides {display: none}
+          img {vertical-align: middle;}
+      
+          /* Slideshow container */
+          .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          margin-top: -40px;
+          }
+      
+          /* Next & previous buttons */
+          .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          }
+      
+          /* Position the "next button" to the right */
+          .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+          }
+      
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+          }
+      
+          /* Caption text */
+          .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          }
+      
+          /* Number text (1/3 etc) */
+          .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+          }
+      
+          /* The dots/bullets/indicators */
+          .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          }
+      
+          .active, .dot:hover {
+          background-color: #717171;
+          }
+      
+          /* Fading animation */
+          .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+          }
+      
+          @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+          }
+      
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+          }
+      
+          body {
+              background-color: #111827;
+            }
+                      
+          .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+          }
+
+    
+          </style>
+    </head>
+
+    <body>
+      
+    <!---------------------------------HEADER----------------------------->
+        <!--<header class="text-gray-400 bg-gray-900 body-font" style="background-color: #a5afc7; z-index: 100;">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl";">Ra ki Ar ka 15th b'day</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white">pndfjond</a>
+              </nav>
+              <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 md:mt-0" style="font-family: 'Libre Barcode 39';">Surprise!
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </header>-->
+          <a name="header"></a>
+          <header class="text-gray-400 bg-gray-900 body-font sticky top-0" style="background-image: conic-gradient(#c795e4, #c98091, #5d2574, #291a5e, #c795e4); z-index: 10;">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="home.html">
+                    <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
+                    <style>
+                        .shoe-logo {
+                            border-radius: 10px;
+                        }
+                    </style>
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl text-teal-400" style="font-family: 'Jacquarda Bastarda 9'; z-index: 10; font-size: 28px;">Ar</span>
+                </a>
+                <a href="#header">
+              <span class="ml-3 text-l text-pink-400" style="z-index: 10; font-size: 15px; font-family: 'Playwrite Ar';">| Our Plans</span>
+            </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
+                <a href="home.html">
+                  <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-teal-400 hover:text-gray-900 rounded text-base mt-4 md:mt-0" style="font-family: 'Silkscreen';">Home
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </a>  
+            </div>
+            </header>
+        
+    <!---------------------------------HEADER----------------------------->
+
+    <!---------------------------------HERO------------------------------->
+    <a name="hero"></a>
+    <section class="text-gray-400 body-font bg-gray-900" style="background-color: #0a0013;">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white" style="background: radial-gradient(circle, #9084f8, #1d0125); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 20px; font-family: 'Jacquarda Bastarda 9'; font-size: 56px;">Our plans</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80" style="color: #bab2fd;">Abhi tak jo bhi kiye, sab toh start hi hai. Abhi bas 1.5 saal se dost hain aur 6 months se dating. Abhi toh bas shuru hua hai. Pura life bacha aur abhi tak itna plan kiye hain hamlog:</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-4">
+                  <i class="material-icons">waving_hand</i>
+                </div>
+                <h2 class="text-lg text-white font-medium title-font mb-2" style="font-family: 'Playwrite Ar';">Farewell</h2>
+                <p class="leading-relaxed text-base">Last day ham dono ka saath mein before 2 saal ka break. Khush hona chahiye kyuki ham dono ko apna 'love of our lives' mil gya, ya fir 2 saal ke liye dur hone ka dukh? Ye 2 saal dur rahenge lekin promise karte ham dono ki ek-dusre ke loves hamesha rahenge, kahi dur nhi ho rhe. KABHI NHI. Ra trusts Ar for that. Ra ensures Ar that he'll f∞rever be there for her. F∞REVER.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-4">
+                  <i class="material-icons">filter_2</i>
+                </div>
+                <h2 class="text-lg text-white font-medium title-font mb-2" style="font-family: 'Playwrite Ar';">2 year hiatus</h2>
+                <p class="leading-relaxed text-base">Ready ho 2 saal dur rehne ke liye? Lekin apne professional career ke liye ye 2 saal bahut zaruri, although not for everyone lekin ham dono ke liye hai. Ar ko karna hai NEET-UG-2027 (700+ laana hoga), Ra ko karna JEE-Advanced-2027 (AIR <50 laana hai). Ye 2 saal yaad aayega, zarurat padegi lekin saath nhi reh payenge. Apne mental aur physical health, fir padhai ko dekhna. Wishing us the best!</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-4">
+                  <i class="material-icons">social_distance</i>
+                </div>
+                <h2 class="text-lg text-white font-medium title-font mb-2" style="font-family: 'Playwrite Ar';">College long distance</h2>
+                <p class="leading-relaxed text-base">Exams khatam ho ke milenge, fir college jayenge apne-apne (Ar ka AIIMS-Delhi, Ra ka IIT-B/IIT-D) aur fir dur reh ke 4-5 long distance relationship. Mushkil rahega ye sab lekin sab kar rhe taaki saath mein reh sake aur apna personal lives mein bhi kuch kare. Texts,  vid calls, yaadein. Waha bhi achhe se padhenge aur apna best dena hai life mein. Ar ko neurology lena naah? Ra ko CSE/MnC + management.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-4">
+                  <i class="material-icons" style="margin-left: 0px;">group</i>
+                </div>
+                <h2 class="text-lg text-white font-medium title-font mb-2" style="font-family: 'Playwrite Ar';">Living together</h2>
+                <p class="leading-relaxed text-base">Hehehe, college ke baad saath rahenge, lekin Ar tabhi tak Doc Ar nhi. Koi nhi. Ar ke saath rehna Ar ko, wait nhi hoga. Apne love ke saath harr subah uthna, breakfast karna, work pe jaana, ghar aake ek dusre ko sab batana, saath mein nahana, saath mein soona, cuddles, huggies, kissi,  etc. SAB KAR SAKTE TAB AUR KOI NHI ROK SAKTA. SABKUCHHHH, SAMJHI NAAH. SABKUCH KAR SAKTE AR AUR RA!</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-4">
+                  <i class="material-icons" style="margin-left: 0px;">favorite</i>
+                </div>
+                <h2 class="text-lg text-white font-medium title-font mb-2" style="font-family: 'Playwrite Ar';">Shaadiiiiiii (abhi karo toh)</h2>
+                <p class="leading-relaxed text-base">Kuch saal (3? 5? Jaisa Ar chaahe) tak bina shaadi ke rahenge saath hi mein, uske baad SHAADI AR AUR RA KA. Shaadi mein aayega ham dono ka family lekin zyada dost sab toh hai nhi bulaane ko. Karenge sabke saamne kissi (tum boli bas thoraaaa sa french kissi kar sakte). Fir bhaag jayenge raat mein ghumne, fir saath sleepy. Fir honeymoon bhi toh hai. Fir ham tum officially Wifie aur Hubby.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-4">
+                  <i class="material-icons" style="margin-left: 0px;">diversity_2</i>
+                </div>
+                <h2 class="text-lg text-white font-medium title-font mb-2" style="font-family: 'Playwrite Ar';">Love, life aur family</h2>
+                <p class="leading-relaxed text-base">Shaadi ke baad ham dono ka love sach mein ∞ ho jayega (abhi bhi haiii). Ham dono ka apna family hoga: Ar, Ra, Zed, Zee aur shayad koi pet (Ar ka kutta Ra aur Ra ki haathi Ar ke alawa). Hamlog ke saath ham dono ka family bhi rahega aur ham dono ka ek bada sa sundar ghar hoga, hehehe. Ham dono saath mein buddhe bhi ho jayenge lekin WE'LL L♡VE EACH OTHER TILL THE END OF ETERNITY.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!---------------------------------HERO------------------------------->
+
+    <!---------------------------------FOOTER----------------------------->
+    <footer class="text-gray-400 bg-pink-900 body-font" style="background-color: #e4747d;">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="https://github.com/zed-zee/ar" target="_blank">
+            <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
+            <span class="ml-3 text-xl text-teal-900" style="font-family: 'Playwrite Ar';">For meri Ar</span>
+          </a>
+          <p class="text-sm text-pink-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"> website via
+              <a href="https://github.com/zed-zee" class="text-teal-800 ml-1" target="_blank" rel="noopener noreferrer">Ar aur Ra ka Zed-Zee</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="ml-3 text-gray-400" href="https://linktr.ee/raghavkarn" target="_blank">
+              <img src="media/images/linktree.png" style="height: 20px; width: 16px;">
+            </a>
+            <a href="mailto:Rakarn@icloud.com" class="text-gray-400" target="_blank" style="padding-left: 10px;">
+              <img src="media/images/email.svg" alt="mail" width="24" height="24">
+            </a>
+            <a class="text-gray-400" href="https://github.com/raghav-karn" target="_blank" style="padding-left: 10px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal-800" class="bi bi-github fill-grey-800" viewBox="0 0 16 16" style="margin-right: 10px;">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    <!---------------------------------FOOTER----------------------------->
+
+      
+    </body>
+</html>
