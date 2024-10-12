@@ -152,9 +152,12 @@
           }
     
           .poems {
-            color: #09a174;
             font-size: 25px;
             font-family: 'Playwrite Ar';
+            background: radial-gradient(circle, #9084f8, #1d0125); 
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent;
           }
           </style>
     </head>
@@ -181,7 +184,7 @@
             </div>
           </header>-->
           <a name="header"></a>
-          <header class="text-gray-400 bg-gray-900 body-font sticky top-0" style="background-image: conic-gradient(rgb(199, 149, 228), rgb(255, 209, 220), rgb(198, 79, 245), rgb(105, 235, 196), rgb(199, 149, 228)); z-index: 10;">
+          <header class="text-gray-400 bg-gray-900 body-font sticky top-0" style="background-image: conic-gradient(#c795e4, #c98091, #5d2574, #291a5e, #c795e4); z-index: 10;">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="https://zed-zee.github.io/ar/home">
                     <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
@@ -212,11 +215,11 @@
 
     <!---------------------------------HERO------------------------------->
     <a name="hero"></a>
-    <section class="text-gray-400 bg-gray-900 body-font" style="background-color: #fdc9ee;">
+    <section class="text-gray-400 bg-gray-900 body-font" style="background-color: #0a0013;">
       <div class="container px-5 py-24 mx-auto">
-        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center text-purple-400">
           <a href="media/poems.pdf" download="poems.pdf"><button onclick="Copy()" class="button">
-            <i class="material-icons" style="margin-left: 0px; color: #3d0126; font-size: 64px;">graphic_eq</i> <br><br>
+            <i class="material-icons" style="margin-left: 0px; font-size: 64px;">graphic_eq</i> <br><br>
           </button></a>
         <script type="text/javascript">
           function Copy() {
@@ -230,7 +233,8 @@
             }
         </script>
         <span class="poem">
-          <p class="leading-relaxed text-lg" style="font-size: 20px; color:#3d0126;">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white" style="background: radial-gradient(circle, #9084f8, #1d0125); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 20px; font-family: 'Jacquarda Bastarda 9'; font-size: 56px;">All of Ra's poems for Ar (till 13th Oct 2024)</h1>
+          <p class="leading-relaxed text-lg" style="font-size: 20px; color:#bab2fd;">
               <span class="poems">"A Cringe Apology to Her" (03/03/2024) </span> <br> <br>
               Why are you hurt? <br>
               Is it just me, <br>
@@ -655,7 +659,7 @@
     <!---------------------------------HERO------------------------------->
 
     <!---------------------------------FOOTER----------------------------->
-    <footer class="text-gray-400 bg-pink-900 body-font" style="background-color: #92b8f1;">
+    <footer class="text-gray-400 bg-pink-900 body-font" style="background-color: #c98091;">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="https://github.com/zed-zee/ar" target="_blank">
           <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
