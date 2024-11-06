@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Foldit' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Tsukimi Rounded' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Splash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+
+        <title>Our Gallery</title>
+        <link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+
+        <style>
+          * {box-sizing: border-box}
+          body {font-family: Verdana, sans-serif; margin-top:10;}
+          .mySlides {display: none}
+          img {vertical-align: middle;}
+      
+          /* Slideshow container */
+          .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          margin-top: -40px;
+          }
+      
+          /* Next & previous buttons */
+          .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          }
+      
+          /* Position the "next button" to the right */
+          .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+          }
+      
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+          background-color: #000000cc;
+          }
+      
+          /* Caption text */
+          .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          }
+      
+          /* Number text (1/3 etc) */
+          .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+          }
+      
+          /* The dots/bullets/indicators */
+          .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          }
+      
+          .active, .dot:hover {
+          background-color: #717171;
+          }
+      
+          /* Fading animation */
+          .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+          }
+      
+          @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+          }
+      
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+          }
+      
+          body {
+              background-color: #111827;
+            }
+
+          
+    
+          </style>
+    </head>
+
+    <body>
+      
+    <!---------------------------------HEADER----------------------------->
+        <!--<header class="text-gray-400 bg-gray-900 body-font" style="background-color: #a5afc7; z-index: 100;">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl";">Ra ki Ar ka 15th b'day</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white">pndfjond</a>
+              </nav>
+              <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 md:mt-0" style="font-family: 'Libre Barcode 39';">Surprise!
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </header>-->
+          <a name="header"></a>
+          <header class="text-gray-400 bg-gray-900 body-font sticky top-0" style="background-image: conic-gradient(#666A86, #788AA3, #92B6B1, #B2C9AB, #666A86); z-index: 100;">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="https://zed-zee.github.io/ar/home">
+                    <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
+                    <style>
+                        .shoe-logo {
+                            border-radius: 10px;
+                        }
+                    </style>
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl text-teal-900" style="font-family: 'Jacquarda Bastarda 9'; z-index: 10; font-size: 28px;">Ar</span>
+                </a>
+                <a href="#header">
+              <span class="ml-3 text-l text-pink-800" style="z-index: 10; font-size: 15px; font-family: 'Playwrite Ar';">| Our Gallery</span>
+            </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
+                <a href="https://zed-zee.github.io/ar/home">
+                  <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-teal-400 hover:text-gray-900 rounded text-base mt-4 md:mt-0" style="font-family: 'Silkscreen';">Home
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </a>  
+            </div>
+            </header>
+        
+    <!---------------------------------HEADER----------------------------->
+
+    <!---------------------------------HERO------------------------------->
+    <a name="hero"></a>
+    <section class="text-gray-400 bg-gray-900 body-font" style="background-color: #9eb8db; color: #111827;">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white" style="background: radial-gradient(circle, #282680, #baa6d1); -webkit-background-clip: text; background-clip: text; color: transparent; font-family: 'Jacquarda Bastarda 9'; font-size: 56px;">Looking back to the past</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color: #0f033b;">Reframing the flashbacks, more memories yet to make!</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="media/images/confession.png" style="border-radius: 3%;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-pink-400 mb-1">April 5ᵗʰ, 2024 </h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Accepting our crushes~</h1>
+                  <p class="leading-relaxed">Crush toh dono ko tha Summer 2023 (GLC mein kisi German exam ke samay) se hi tha ek-dusre pe. Same time pe fell for each-other.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="media/images/vc1.png" style="border-radius: 3%;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-pink-400 mb-1">March 27ᵗʰ, 2024</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Discord VCs</h1>
+                  <p class="leading-relaxed">IG calls (voice, vid), DC VCs aur Anime Watch2gether (Your Lie in April) karte the. Start mein baat nhi hota tha toh VC pe gaana hi sunnte the.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="media/images/vc2.jpg" style="border-radius: 3%;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-pink-400 mb-1">April 27ᵗʰ, 2024 (Ra ka b'day)</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Instagram video call on Ra's b'day</h1>
+                  <p class="leading-relaxed">Ra ke b'day ke dinn Ar apna pura time de di usse baat karne ke liye, dinn bhar text pe aur shaam mein vid call. Kon hota itna achha T-T.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="media/images/sky.jpg" style="border-radius: 3%;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-pink-400 mb-1">February 29ᵗʰ, 2024</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Kissing on Sky at midnight</h1>
+                  <p class="leading-relaxed">Sky khelte the finals ke baad. Ek raat 1 baje khele the aur uss raat technically first kiss kiye aur propose bhi. Kiss ka baat chat se sky se irl hogya.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="media/images/list.png" style="border-radius: 3%;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-pink-400 mb-1">Summer 2024 (pre vacations)</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Our first times</h1>
+                  <p class="leading-relaxed">List of what we did before the summer vacations. Bahut kuch. March mein games mein hand kiss. April mein 1st bench pe lip kiss.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="media/images/poem.jpg" style="border-radius: 3%;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-pink-400 mb-1">Written on September 22ⁿᵈ, 2024</h2>
+                  <a href="https://zed-zee.github.io/ar/surprise"><h1 class="title-font text-lg font-medium text-white mb-3" style="font-family: 'Libre Barcode 39';">Preview for a special poem</h1></a>
+                  <p class="leading-relaxed">Ek ajeeb sa poem likha Ar ke b'day ke liye Ra. Thora sa alag hai, Ra hopes achha lage. Dhoondh lo iss poem ko aur decode karlo pehle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!---------------------------------HERO------------------------------->
+
+    <!---------------------------------FOOTER----------------------------->
+    <footer class="text-gray-400 bg-pink-900 body-font" style="background-color: #B2C9AB;">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="https://github.com/zed-zee/ar" target="_blank">
+            <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
+            <span class="ml-3 text-xl text-teal-800" style="font-family: 'Playwrite Ar';">For meri Ar</span>
+          </a>
+          <p class="text-sm text-pink-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"> website via
+              <a href="https://github.com/zed-zee" class="text-teal-800 ml-1" target="_blank" rel="noopener noreferrer">Ar aur Ra ka Zed-Zee</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="ml-3 text-gray-400" href="https://linktr.ee/raghavkarn" target="_blank">
+              <img src="media/images/linktree.png" style="height: 20px; width: 16px;">
+            </a>
+            <a href="mailto:Rakarn@icloud.com" class="text-gray-400" target="_blank" style="padding-left: 10px;">
+              <img src="media/images/email.svg" alt="mail" width="24" height="24">
+            </a>
+            <a class="text-gray-400" href="https://github.com/raghav-karn" target="_blank" style="padding-left: 10px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal-800" class="bi bi-github fill-grey-800" viewBox="0 0 16 16" style="margin-right: 10px;">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    <!---------------------------------FOOTER----------------------------->
+
+      
+    </body>
+</html>

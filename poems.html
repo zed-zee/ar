@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Foldit' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Tsukimi Rounded' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Splash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <title>A surprise poem ^^</title>
+        <link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+
+        <style>
+          * {box-sizing: border-box}
+          body {font-family: Verdana, sans-serif; margin-top:10;}
+          .mySlides {display: none}
+          img {vertical-align: middle;}
+      
+          /* Slideshow container */
+          .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          margin-top: -40px;
+          }
+      
+          /* Next & previous buttons */
+          .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          }
+      
+          /* Position the "next button" to the right */
+          .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+          }
+      
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+          }
+      
+          /* Caption text */
+          .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          }
+      
+          /* Number text (1/3 etc) */
+          .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+          }
+      
+          /* The dots/bullets/indicators */
+          .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          }
+      
+          .active, .dot:hover {
+          background-color: #717171;
+          }
+      
+          /* Fading animation */
+          .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+          }
+      
+          @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+          }
+      
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+          }
+      
+          body {
+              background-color: #111827;
+            }
+
+            .hidden-poem,
+          .shown-poem {
+            display: block;
+            overflow: hidden;
+            transition: all 750ms ease-in-out;
+          }
+          .hidden-poem {
+            height: auto;
+            opacity: 1;
+            width: auto;
+          }
+          .shown-poem {
+            color: #fff;
+            height: 0;
+            opacity: 0;
+            width: 0;
+          }
+          .button:hover .hidden-poem {
+            height: 0px;
+            opacity: 0;
+            width: 0px;
+          }
+          .button:hover .shown-poem {
+            height: auto;
+            opacity: 1;
+            width: auto;
+          }
+    
+          .poems {
+            font-size: 25px;
+            font-family: 'Playwrite Ar';
+            background: radial-gradient(circle, #6e91ea, #6eeac7); 
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent;
+          }
+          </style>
+    </head>
+
+    <body>
+      
+    <!---------------------------------HEADER----------------------------->
+        <!--<header class="text-gray-400 bg-gray-900 body-font" style="background-color: #a5afc7; z-index: 100;">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl";">Ra ki Ar ka 15th b'day</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white">pndfjond</a>
+              </nav>
+              <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 md:mt-0" style="font-family: 'Libre Barcode 39';">Surprise!
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </header>-->
+          <a name="header"></a>
+          <header class="text-gray-400 bg-gray-900 body-font sticky top-0" style="background-image: conic-gradient(#c795e4, #d9f7b4, #5d2574, #30417c, #c795e4); z-index: 10;">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="https://zed-zee.github.io/ar/home">
+                    <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
+                    <style>
+                        .shoe-logo {
+                            border-radius: 10px;
+                        }
+                    </style>
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl text-teal-400" style="font-family: 'Jacquarda Bastarda 9'; z-index: 10; font-size: 28px;">Ar</span>
+                </a>
+                <a href="#header">
+              <span class="ml-3 text-l text-pink-300" style="z-index: 10; font-size: 15px; font-family: 'Playwrite Ar'; font-size: 14px;">| All of Ra's poem's to Ar</span>
+            </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
+                <a href="https://zed-zee.github.io/ar/home">
+                  <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-teal-400 hover:text-gray-900 rounded text-base mt-4 md:mt-0" style="font-family: 'Silkscreen';">Home
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </a>  
+            </div>
+            </header>
+        
+    <!---------------------------------HEADER----------------------------->
+
+    <!---------------------------------HERO------------------------------->
+    <a name="hero"></a>
+    <section class="text-gray-400 bg-gray-900 body-font" style="background-color: #000611;">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center text-blue-400">
+          <a href="media/poems.pdf" download="poems.pdf"><button onclick="Copy()" class="button">
+            <i class="material-icons" style="margin-left: 0px; font-size: 64px;">graphic_eq</i> <br><br>
+          </button></a>
+        <script type="text/javascript">
+          function Copy() {
+            var copy_text_val = document.querySelector('.copy_text');
+
+            function Copy() {
+              copy_text_val.select();
+              document.execCommand("copy");
+              console.log(copy_text_val.value);
+              }         
+            }
+        </script>
+        <span class="poem">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white" style="background: radial-gradient(circle, #83a4f7, #140126); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 20px; font-family: 'Jacquarda Bastarda 9'; font-size: 56px;">All of Ra's poems for Ar (till 13th Oct 2024)</h1><br><br><br>
+          <p class="leading-relaxed text-lg" style="font-size: 20px; color:#b0c3fc;">
+              <span class="poems">"A Cringe Apology to Her" (03/03/2024) </span> <br> <br>
+              Why are you hurt? <br>
+              Is it just me, <br>
+              Or is it the wound that's cut? <br>
+              <br>
+              Do you even care <br>
+              That you're not alone? <br>
+              Is it even fair—or so one thinks— <br>
+              That we're the one in affair? <br>
+              <br> 
+              I don't love you, nor do you to me; <br>
+              But we kiss sometimes for our own sake. <br>
+              I got nothing, but the life's stew; <br>
+              "Damn, man! Shit's not a piece of cake." <br>
+              <br> 
+              I have a shot at things, <br>
+              For curiosity wins me over. <br>
+              'Tis sometimes I fail the ding, <br>
+              And the games fuck me over. <br>
+              <br> 
+              Here's me, writing a poetry <br>
+              For—I guess—the second time. <br>
+              But for you, Arpita, I hope to <br>
+              Let's play Sky sometime! <br>
+              <br> <br> <br> 
+
+
+              <span class="poems">The word (09/05/2024)</span> <br> <br>
+              How did you add a meaning <br>
+              To the word 'Together'? <br>
+              How do you reckon that I'm all in <br>
+              Into the word 'Forever'? <br>
+              <br> <br> <br>
+
+              <span class="poems">Relatable (11/05/2024)</span> <br> <br>
+              How did your presence <br>
+              At once <br>
+              Made all those love songs relatable? <br>
+              Are you the one <br>
+              Who made my loving heart inflamable? <br>
+              Say that you are <br>
+              Say that you're mine <br>
+              For nobody comes close <br>
+              I'll never leave you behind. <br>
+              <br> <br> <br> 
+
+              <span class="poems">My sunshine (16/05/2024)</span> <br> <br>
+              Oh, girl, I'll worship you like a shrine, <br>
+              My holy devine. <br>
+              I truly do wanna call you "mine". <br>
+              Never want to see you cryin'. <br>
+              All day, all night, I yearn to see you shine; <br>
+              To see you smile, <br>
+              Even when you're drunk on seven glasses of wine. <br>
+              When you're bloomin', I'll turn out fine. <br>
+              'Cause when you're groovin', I'll be in cloud nine! <br>
+              <br> <br> <br>
+
+              <span class="poems">Low tides (19/05/2024)</span> <br> <br>
+              There will be nights with no goodbyes; <br>
+              There will be days when you've got no smiles; <br>
+              But even when through those harsh times, <br>
+              Will we soar together through the skies <br>
+              Like it's been a rough day, and end it with our two sighs. <br>
+              <br> 
+              Even with all those wailes and cries, <br>
+              Just stick with me, and there'll be alrights. <br>
+              Even when there's no one besides <br>
+              Me, we'll make it together and tomorrow'll be nice. <br>
+              <br> <br> <br>
+
+              <span class="poems">Dadda Loves His Mommy (26/05/2024)</span> <br> <br>
+              My love, my life; <br>
+              Sleep well, holdin' me tight. <br>
+              Oh, yeah, Arpita meri future wife; <br>
+              Baby, I love you; I do it right. <br>
+              <br> 
+              Be my mommy, I'll be your baby <br>
+              I'll be your dadda, and let's do it daily. <br>
+              I love it, I love you. You, me, baby. <br>
+              I'll be waiting — years — for us to do it daily. <br>
+              Haan, bae, we'll do it daily. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Love You Anyway (26/05/2024)</span> <br> <br>
+              I love you, bae, <br>
+              I wanna stay <br>
+              With you, night and day; <br>
+              And never be away. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Fight! (26/04/2024)</span> <br> <br>
+              We fight our demons, our fears, <br>
+              The skies, those tears. <br>
+              Be brave, my dear, <br>
+              I'll be here, to you somewhere near. <br>
+              <br> 
+              On the borders, the war. <br>
+              In light is the poor. <br>
+              Rushing away, deep to the lore, <br>
+              Only, only, to deep roar. <br>
+              <br> 
+              To road the lion inside of me; <br>
+              Slay those dragons, <br>
+              Ride those wagons, <br>
+              The car driver inside of me <br>
+              The hardship, the lie of me. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Hero (03/06/2024)</span> <br> <br>
+              The velocity is instantaneous <br>
+              As time tends to zero. <br>
+              All the sufferings are horrendous, <br>
+              When I can't call my hero. <br>
+              <br> <br> <br>
+
+              <span class="poems">I'll be (03/06/2024)</span> <br> <br>
+              I'll be happy when you are. <br>
+              I'll be a saddie when you are. <br>
+              I'll be happy when it's you. <br>
+              I'll be a saddie when you're blue. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Incompleteness (04/06/2024)</span> <br> <br>
+              A night without a "goodnight" <br>
+              Is like a flight taken upright. <br>
+              And a fight without a "goodbye" <br>
+              Is like jumping off a great height. <br>
+              <br> 
+              I can't write any good <br>
+              When I'm without you <br>
+              I can't be in the mood <br>
+              To try to see the morning dew. <br>
+              <br> 
+              When my sunshine's not near <br>
+              It's all dark, it's not fun, dear <br>
+              All I scare is your absence, my fear <br>
+              I want you, that's clear. <br>
+              <br> <br> <br> 
+
+              <span class="poems">To the best girl forever (06/06/2024)</span> <br> <br>
+              Did I ever say that you're the one for me? <br>
+              I have forever held this in my heart, <br>
+              My sunken love for thee. <br>
+              And I never knew, you had a similar part. <br>
+              I wish until the end, it's just we. <br>
+              <br> 
+              You, pretty girl, are stranded in the mist; <br>
+              Amidst it all, you must pave your way. <br>
+              Don't lose hope, don't let go, don't think you missed. <br>
+              I will be on the other side, faraway; <br>
+              It's not something that's forever, miss. <br>
+              <br> 
+              What is forever, though, is our bond, <br>
+              Our love, our trust, our need of each-other. <br>
+              Our language don't need a single nod; <br>
+              We are meant to be forever, <br>
+              Like a lightning stricken lightning-rod. <br>
+              <br> 
+              Hold on to the high ground, <br>
+              The pain in thy heart shall vanish away. <br>
+              Hold me like you'd never dismount, <br>
+              It won't take long for you to pave the way. <br>
+              And hence can we scale this great mount. <br>
+              <br> 
+              Even if you think so, you're none to blame. <br>
+              You did here nothing wrong; <br>
+              Why do you think you ignited this flame? <br>
+              That's why I want you to be strong; <br>
+              And no, it's not "the same". <br>
+              <br> 
+              In the end, it'll be just us; <br>
+              No matter when, no matter where. <br>
+              So, please, hold on and discuss <br>
+              With yourself about what you scare. <br>
+              Stay strong, and we'll be together forever thus. <br>
+              <br> <br> <br> 
+
+              <span class="poems">I need you the most (07/06/2024)</span> <br> <br>
+              It's been a while since we talked. <br>
+              Not gonna lie, it hurts in my heart. <br>
+              I wanna go out with you, have a walk. <br>
+              It might be rough, but it has begun to start. <br>
+              <br>
+              I might need to break it down for you, <br>
+              For you who has broken down. <br>
+              My queen, I'll gift you a throne for you, <br>
+              And give you the biggest crown. <br>
+              <br>
+              I'll rip up my heart into pieces; <br>
+              Scattered, shattered for you to glue. <br>
+              Keep it and never give it back, I'm needless. <br>
+              Paint it red, 'cause pain is blue. <br>
+              <br> 
+              I'll show you what lies underneath, <br>
+              From the start, to my heart, <br>
+              Till the end, and what lies beneath. <br>
+              Bring me back from what I had depart. <br>
+              <br> 
+              I give my all to you, my all. <br>
+              When I climb 'em hundreds, <br>
+              You need to grab me when I fall. <br>
+              Take good care of me, else I'd slip off the handrails. <br>
+              <br> 
+              Need you to give my pump a pump, <br>
+              Like forever, it has been pumping for someone. <br>
+              Didn't know it would be you, who'd never dump, <br>
+              Yeah, you, you're that special one. <br>
+              <br> 
+              I need you to catch up the pace, <br>
+              For it wouldn't be hard for you to fall behind. <br>
+              This life is a merciless race, <br>
+              Where time just won't rewind. <br>
+              <br>
+              I'll hold you close, tight within my arm, <br>
+              In those times when you feel low. <br>
+              Hold you forever, will do no harm, <br>
+              And hope that the time wasn't so slow. <br>
+              <br> 
+              That's one, for you, my girl. <br>
+              I have to tell you: I need you. <br>
+              I need to see you swirl. <br>
+              There's none like you, not even a few.  <br>
+              <br> <br> <br> 
+
+              <span class="poems">Mediator spring (08/06/2024)</span> <br> <br>
+              I don't care if you're cool or hot <br>
+              I'll forever be your fan <br>
+              I'll love you forever, even I not <br>
+              And for forever, I'll be your man <br>
+              <br> 
+              I know you hate the heat <br>
+              But damn, guess who's the hottest  <br>
+              It's impossible to beat <br>
+              This "coolest girl" contest. <br>
+              <br> 
+              Despite what, you're the coolest <br>
+              The one I wanna chill out with <br>
+              And in spite of that, you're not cold <br>
+              The one I could spend cold nights with. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Miss karte (09/06/2024)</span> <br> <br>
+              Miss karte Momma-Dadda ka endless talks. <br>
+              Miss karte when we planned to meet and walk. <br>
+              It feels like an eternity, hey, but <br>
+              Now, nobody knocks. <br>
+              Baby, you rock. <br>
+              <br> <br> <br> 
+
+              <span class="poems">This wall between us (09/06/2024)</span> <br> <br>
+              They've pulled up these walls <br>
+              To put us on halt. <br>
+              They don't care, they all <br>
+              Think we're the ones in fault. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Eternal promises (09/06/2024)</span> <br> <br>
+              I'll forever be in love; <br>
+              Forever feel it new. <br>
+              Its engrained in my nerve <br>
+              That all I love is you. <br>
+              <br> 
+              I'm scared to lose my gem, <br>
+              To drift away and never be together. <br>
+              Then my life would be a mayhem. <br>
+              Remember, we promised "forever"? <br>
+              <br> 
+              I don't want to lose the half of me. <br>
+              Without you, I'm a dead body alive. <br>
+              Without you, I'd stab myself with a knife, <br>
+              Because I need you for myself to thrive. <br>
+              <br> 
+              I want to promise a thousand times more <br>
+              That we'll be together. <br>
+              And lead our love life's lore, <br>
+              Promise to be forever. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Who knew (09/06/2024)</span> <br> <br>
+              Didn't know that you're my soulmate <br>
+              Disguised as a classmate. <br>
+              <br> <br> <br> 
+
+              <span class="poems">In the bed (09/06/2024)</span> <br> <br>
+              One day, we'll be there <br>
+              Lying together in a bed <br>
+              You know what happens there  <br>
+              I'll be colorful, it'll be all red. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Devoid, depart (23/06/2024)</span> <br> <br>
+              One day, we'll be miles apart; <br>
+              The day'll come when we depart, <br>
+              In sorrow. We'll our part. <br>
+              Atleast I could say, "I have your heart." <br>
+              <br> <br> <br> 
+
+              <span class="poems">Smile :) (25/06/2024)</span> <br> <br>
+              I'll write it simple, <br>
+              Or won't for a while. <br>
+              I love your dimples, <br>
+              'Cause I see them when you smile. <br>
+              <br> 
+              When you stretch your lips wide open, <br>
+              I adore that parabolic arc. <br>
+              Bring 'em close to mine, no words spoken; <br>
+              We touch, and that's art. <br>
+              <br>
+              Soft, featherly, heavenly pair of skin, <br>
+              Just like us, and the abyss akin. <br>
+              We bear this world like flowers; <br>
+              Make it our garden, the odyssey of ours. <br>
+              <br> <br> <br> 
+
+              <span class="poems">I Know How Much You Love Me. (09/08/2024)</span> <br> <br>
+              O' my dear — <br>
+              Forgive all what I said; <br>
+              I have my fear <br>
+              That I'd lose you someday. <br>
+              <br> 
+              That I'd be alone, no one's near; <br>
+              That I'd be devoid, of love that we made; <br>
+              That I'd speak to myself, no one'd hear. <br>
+              Don't want to wake up, up to such a day. <br>
+              <br> 
+              I've said things — I don't want to repeat, <br>
+              I don't want to think about. <br>
+              Want to hold you close, caress, after my own defeat; <br>
+              Don't want to lose, we can talk and make it out. <br>
+              <br> 
+              Things did go bad, but we withstood the heat; <br>
+              I cried, shouted, it might've been too loud. <br>
+              My wounds have pierced you right through that beat; <br>
+              But we stand still, we are together without no one's around. <br>
+              <br>
+              Would you, my love, please take this apology? <br>
+              The fight we had, was an opportunity: <br>
+              To improve ourselves, to learn us better, <br>
+              To cry, to learn to adore the bad weather. <br>
+              <br> 
+              I still feel sorry for all that I've said, <br>
+              But in the end, you have taken my heart. <br>
+              I'll love you even after it breaks. (You wouldn't let it.) <br>
+              If I would've said something, I should've paid <br>
+              The prices I couldn't afford, to lose someone <br>
+              That I so much adore. <br>
+              <br> <br> <br> 
+
+              <span class="poems">Happy b'day, mo (22/09/2024)</span> <br> <br>
+              Eins, zwei, drei, zählen bis vierzehn <br>
+              and the next day, fifteen on the Big Ben. <br>
+              समय बीत जाएगा, लेकिन तू ना बदलना <br>
+              Ar = input("Weil you're सबसे best ना!") <br>
+              <br> 
+              Still in pain, punches in dem Bauch; <br>
+              Stark wie du bist, you're the hawk, not an owl. <br>
+              आज के दिन भूल जाते सारा दुख, <br>
+              &#60;br&#62; And celebrate ein Stück.<br>
+              <br> 
+              These little 24 hours shall be <br>
+              your best ones in a while, may we? <br>
+              Because your happiness fuels many's, <br>
+              fills fat with fulfillment, even to the skinny. <br>
+              <br> 
+              And when it comes to me, <br>
+              I could've never guessed what we could be <br>
+              or what we could have, but now I know <br>
+              that who I love is a glacier's water flow. <br>
+              <br> 
+              The purest, the kind, <br>
+              the prettiest strings intertwined. <br>
+              O girl, you may not reckon your worth, <br>
+              I bet the best thing to me isn't but your birth. <br>
+              <br> 
+              Und wann sage ich „ich liebe dich doch“ <br>
+              dann meine ich alles von dir, ∞ noch. <br>
+              और मैं करूंगा तुझसे हमेशा प्यार, <br>
+              बस तू मुझसे शादी करले, यार| <br>
+              <br> 
+              I l♡ve you more than you think <br>
+              and more than the times anyone could blink. <br>
+              May count it, but not the sheeps today <br>
+              because each second leads to a new play. <br>
+              <br> 
+              A new day, begin the new age <br>
+              by understanding the now set-up stage <br>
+              and execute not what one wants <br>
+              but what you need is all that counts. <br>
+              <br> 
+              Be yourself and live up to the hype <br>
+              I'll be forever loving you your type. <br>
+              Be yourself but change for good <br>
+              for that's a nice attitude under the hood. <br>
+              <br> 
+              Coming back to me and us, <br>
+              our first time together, no fuss, <br>
+              and till the eternal lasts <br>
+              shall come no last pasts. <br>
+              <br> 
+              Tick-tock on the clock, <br>
+              Click-clock and watch our lips lock <br>
+              and adoring each elementary time <br>
+              for winning over you, calling you 'mine'. <br>
+              <br>
+              You are the best in each aspect, <br>
+              so, my girl, you own all my respect. <br>
+              I will be loving you right, <br>
+              till the end, holding you tight. <br>
+              <br> 
+              Vierzehn, sechzehn, siebzehn und siebzig, <br>
+              zählen bis infinity für ich, mich, du, dich. <br>
+              For me and us together, you shan't worry, <br>
+              one day we will get married.</p>
+          </span>     
+          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-8 mb-6"></span>
+          <h2 class="text-teal-400 font-medium title-font tracking-wider text-sm">All the poems</h2>
+          <p class="text-green-300">by Ar's Ra</p>
+      </div>
+      </div>
+    </section>
+    <!---------------------------------HERO------------------------------->
+
+    <!---------------------------------FOOTER----------------------------->
+    <footer class="text-gray-400 bg-pink-900 body-font" style="background-color: #d9f7b4;">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="https://github.com/zed-zee/ar" target="_blank">
+          <img src="media/images/heart.png" alt="icon" width="32" height="32" class="icon">
+          <span class="ml-3 text-xl text-teal-800" style="font-family: 'Playwrite Ar';">For meri Ar</span>
+        </a>
+        <p class="text-sm text-pink-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"> website via
+            <a href="https://github.com/zed-zee" class="text-teal-800 ml-1" target="_blank" rel="noopener noreferrer">Ar aur Ra ka Zed-Zee</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="ml-3 text-gray-400" href="https://linktr.ee/raghavkarn" target="_blank">
+            <img src="media/images/linktree.png" style="height: 20px; width: 16px;">
+          </a>
+          <a href="mailto:Rakarn@icloud.com" class="text-gray-400" target="_blank" style="padding-left: 10px;">
+            <img src="media/images/email.svg" alt="mail" width="24" height="24">
+          </a>
+          <a class="text-gray-400" href="https://github.com/raghav-karn" target="_blank" style="padding-left: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal-800" class="bi bi-github fill-grey-800" viewBox="0 0 16 16" style="margin-right: 10px;">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  <!---------------------------------FOOTER----------------------------->
+
+      
+    </body>
+  </html>
